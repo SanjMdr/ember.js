@@ -496,9 +496,11 @@ const LinkComponent = EmberComponent.extend({
 
     Example:
 
-    ```javascript
-    App.MyLinkComponent = Ember.LinkComponent.extend({
-      init: function() {
+    ```app/components/my-link.js
+    import LinkComponent from '@ember/routing/link-component';
+
+    export default LinkComponent.extend({
+      init() {
         this._super(...arguments);
         Ember.Logger.log('Event is ' + this.get('eventName'));
       }

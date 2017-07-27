@@ -188,7 +188,7 @@ Engine.reopenClass({
     This must be a unique name, as trying to register two initializers with the
     same name will result in an error.
 
-    ```javascript
+    ```app/initialize/named-initializer.js
     Ember.Application.initializer({
       name: 'namedInitializer',
 
