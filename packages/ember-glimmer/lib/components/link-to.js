@@ -245,13 +245,13 @@
 
   ### Allowing Default Action
 
- By default the `{{link-to}}` component prevents the default browser action
- by calling `preventDefault()` as this sort of action bubbling is normally
- handled internally and we do not want to take the browser to a new URL (for
- example).
+  By default the `{{link-to}}` component prevents the default browser action
+  by calling `preventDefault()` as this sort of action bubbling is normally
+  handled internally and we do not want to take the browser to a new URL (for
+  example).
 
- If you need to override this behavior specify `preventDefault=false` in
- your template:
+  If you need to override this behavior specify `preventDefault=false` in
+  your template:
 
   ```handlebars
   {{#link-to 'photoGallery' aPhotoId preventDefault=false}}

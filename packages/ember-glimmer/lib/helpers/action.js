@@ -194,7 +194,7 @@ export const ACTION = symbol('ACTION');
   ```
 
   ```app/helpers/disable-bubbling.js
-  import { helper } from '@ember/component/helper'
+  import { helper } from '@ember/component/helper';
 
   export function disableBubbling([action]) {
     return function(event) {
@@ -263,7 +263,7 @@ export const ACTION = symbol('ACTION');
   import { inject as service } from '@ember/service';
 
   export default Controller.extend({
-    someService: inject.service()
+    someService: service()
   });
   ```
 
